@@ -1,37 +1,65 @@
-# 🧠 Credit Risk Classification – ML Modeling & Feature Engineering
+# 📊 Power BI – Delinquency Risk Monitoring Dashboard
 
-This folder contains the machine learning pipeline used to classify accounts into risk groups (A, B, C) based on their historical behavior.
+This folder contains the Power BI dashboard used to visualize risk classification outputs and operational KPIs derived from simulated utility billing data and machine learning predictions.
 
-## 🔍 Problem
+## 📌 What It Does
 
-How can we classify customer accounts into actionable risk groups — before they default?  
-Our goal: Predict whether an account is low-risk, moderate, or likely to default using only their historical behavior.
+This report enables real-time monitoring and decision support for customer delinquency risk. Built on the synthetic data and predictions from Parts 1 and 2, it helps organizations:
 
-## 🧪 Key Components
+* Track key performance indicators (KPIs) such as bad debt trends and portfolio health
+* Classify and visualize account risk levels (A, B, C) using explainable ML outputs
+* Drill down into account-level behavior for analysis or operational action
+* Identify patterns in energy usage, payments, penalties, and risk over time
 
-| Notebook | Purpose |
-|----------|---------|
-| `01_preview_data.ipynb` | Explore and understand the raw data |
-| `02_transform_data.ipynb` | Engineer features from balance snapshots |
-| `03_label_accounts.ipynb` | Apply hybrid logic-based labeling: A (good), B (neutral), C (risky) |
-| `04_train_model.ipynb` | Train Random Forest classifier on behavioral features |
-| `05_results_analysis.ipynb` | Evaluate accuracy and interpretability (SHAP, LIME, feature ranking) |
+## 🧪 Live Demo
 
-## ⚙️ Features Engineered
+Explore the interactive dashboard here:
 
-- Historical delinquency score trends
-- Count of suspensions, penalty streaks, recent behavior stats
-- Account age, customer type, normalized payment ratios
+🔗 [Power BI Online Demo](link-to-demo)
 
-## 🧷 Output
+Perfect for demos, interviews, or collaborative presentations.
 
-- `features.csv`: Engineered features for each account snapshot
-- `predictions.csv`: Prediction outputs including probabilities and risk labels
-- SHAP and LIME values for interpretability
+## 📁 Folder Contents
 
-## 📘 Learn More
+| File/Folder                                             | Description                                                       |
+| ------------------------------------------------------- | ----------------------------------------------------------------- |
+| `Part 3 - Power BI Report.pdf`                          | Full documentation with dashboard walkthrough and design insights |
+| `Utility Billing Delinquency Dashboard & Analysis.pbix` | Power BI file with data model, visuals, and logic                 |
+| `data/`                                                 | Cleaned features and prediction data used by the dashboard        |
 
-Full methodology, feature logic, and model analysis are documented in:
-📄 `../reports/report_modeling.pdf`
+## 📥 Input Data
 
----
+The dashboard reads from the following files in the `data/` folder:
+
+* `accounts.csv`, `customers.csv`, `balance_snapshots.csv`
+* `balance_snapshots_raw_features.csv` – Aggregated behavioral history
+* `balance_snapshots_features.csv` – Normalized ML feature set
+* `balance_snapshots_metadata.csv` – Snapshot status and risk labels
+* `balance_snapshots_predictions.csv` – Predicted class and probabilities
+* `balance_snapshots_predictions_explanations.csv` – SHAP explanations for model decisions
+
+You can download the demo dataset from here:
+
+**🔗 [Demo Dataset](https://umanitoba-my.sharepoint.com/:f:/g/personal/tranndt_myumanitoba_ca/Elecx3l-g2FEtkU9YJ3ZBR4Bbgj1UlpOrg_MbsHpoZhcaA?e=CdRXnK)**
+
+These are produced in **Part 2 – Machine Learning**.
+
+## 🧭 Dashboard Sections
+
+* **Overview Dashboard** – High-level metrics for executive insight
+* **Account Explorer** – Tabular explorer with filters and key account summaries
+* **Account In-Depth Analysis** – Detailed drill-downs for selected accounts, including:
+
+  * Assigned risk tier and explanation
+  * Historical billing and payment timeline
+  * Monthly delinquency score and status progression
+
+## 🧠 Audience
+
+* 📈 **Business Analysts** – Analyze risk segments and behavioral trends
+* 💼 **Operations Teams** – Pinpoint at-risk accounts and support recovery efforts
+* 🎯 **Executives** – Monitor portfolio-level exposure and performance
+
+## 📘 Read More
+
+📄 `Part 3 - Power BI Report.pdf` — includes a full visual walkthrough, rationale behind each section, and case studies highlighting usage scenarios.
