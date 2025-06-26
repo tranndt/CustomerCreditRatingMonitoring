@@ -1,0 +1,12 @@
+faker
+pandas
+sqlalchemy
+matplotlib
+seaborn
+numpy
+pyyaml
+tqdm
+scikit-learn
+tensorflow
+imbalanced-learn
+shap

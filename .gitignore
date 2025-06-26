@@ -1,3 +1,5 @@
 *.csv
 .DS_Store
 __legacy__
+.venv
+.pbix

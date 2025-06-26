@@ -22,7 +22,7 @@ This repository contains a complete, end-to-end solution for simulating, analyzi
 
 The full datasets (CSVs) used in the project can be downloaded here:
 
-**🔗 [Download Dataset (Google Drive)](https://umanitoba-my.sharepoint.com/:f:/g/personal/tranndt_myumanitoba_ca/Enq4iqpaqPxDrBiVE27iDewBCOyi18MZwIZDwBHOZPdkjA?e=YxiCgC)**
+**🔗 [Download Dataset (One Drive)](https://umanitoba-my.sharepoint.com/:f:/g/personal/tranndt_myumanitoba_ca/Enq4iqpaqPxDrBiVE27iDewBCOyi18MZwIZDwBHOZPdkjA?e=YxiCgC)**
 
 Includes:
 
