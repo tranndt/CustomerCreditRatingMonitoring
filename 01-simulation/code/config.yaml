@@ -1,0 +1,33 @@
+cycle_length: 30
+description: 'Utility Customer Simulation '
+num_customers: 1000
+num_cycles: 72
+output_dir: data/simulation/medium_skewed_reliability/3k_customers/seed_0
+record_events_flag: false
+seed: 0
+settings:
+  customer_reliability_distribution:
+    high: 0.2
+    low: 0.3
+    medium: 0.5
+  penalty_thresholds:
+    close: 10
+    suspend: 5
+  plan_rate:
+    commercial: 0.35
+    residential: 0.22
+  usage_probabilities:
+    high: 0.2
+    low: 0.5
+    medium: 0.3
+  usage_ranges:
+    high:
+    - 500
+    - 800
+    low:
+    - 100
+    - 350
+    medium:
+    - 250
+    - 500
+start_date: 2020-01-01
