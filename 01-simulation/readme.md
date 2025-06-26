@@ -28,7 +28,7 @@ Edit `config.yaml` to change:
 - Reliability and delinquency logic
 - Escalation thresholds
 
-## 🏁 Output Tables
+## 🏁 Output Table
 
 The simulation outputs CSVs including:
 - `customers.csv`
