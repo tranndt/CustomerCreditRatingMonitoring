@@ -4,7 +4,7 @@ This folder contains all notebooks and scripts used to engineer features, define
 
 ## 🎯 What It Does
 
-This phase builds on the synthetic dataset from Part 1 to identify which accounts are at risk of becoming delinquent or being closed due to nonpayment.
+Our classification solution attempts to learn from payment history to identify which accounts are at risk of becoming delinquent, suspended or being closed due to nonpayment and classify them into risk rating (Low - Medium - High)
 
 Key tasks include:
 
@@ -13,11 +13,23 @@ Key tasks include:
 * Training a **Random Forest model** to classify accounts into risk groups
 * Generating **prediction probabilities and SHAP explanations** to support interpretability
 
+## 📘 Report
+
+📄 [**Report #2 - Creating A Customer Credit Rating Classification System.pdf**](https://github.com/tranndt/CustomerCreditRatingMonitoring/blob/894de102cc59f4eb87245e9f58f16fb053710b2c/02-modelling/Report%20%232%20-%20Creating%20A%20Customer%20Credit%20Rating%20Classification%20System.pdf) 
+
+Includes full breakdown of the ML approach, case studies, and detailed explanation of feature engineering and label design.
+
+## Key Results
+
+
+
+
+
 ## 📂 Key Files
 
 | File/Folder                     | Description                                                               |
 | ------------------------------- | ------------------------------------------------------------------------- |
-| `Part 2 - Machine Learning.pdf` | Full report covering feature logic, label strategy, and model performance |
+| `Report #2 - Creating A Customer Credit Rating Classification System.pdf` | Full report covering feature logic, label strategy, and model performance |
 | `modelling_report.ipynb`        | Notebook demonstrating model outputs and case studies                     |
 | `pipeline.ipynb`                | End-to-end walkthrough of the ML pipeline: feature creation to prediction |
 | `pipeline/run_pipeline.py`      | Main script to run the full pipeline                                      |
@@ -30,16 +42,7 @@ Located in `data/raw/`:
 * `balance_snapshots.csv` – Raw monthly account state data
 * `accounts.csv`, `bad_debts.csv` – Metadata from Part 1
 
-You can generate these from `01-data-engineering/` or download them from:
-
-**🔗 [Demo Dataset](https://umanitoba-my.sharepoint.com/:f:/g/personal/tranndt_myumanitoba_ca/El2HkuodHShOmfMw5a5JZ8cBqGlAQ0BOJlLP58izg_7lqQ?e=v7z3J3)**
-
-**Dataset Overview:**
-
-* 3,000 customers over 72 billing cycles (6 years)
-* \~14,000 accounts created
-* \~580,000 records for usage, billing, and payments
-* 500+ accounts closed due to delinquency
+You can use our Demo Dataset or generate these from `01-data-engineering/` using custom configurations.
 
 ## ▶️ Running the Pipeline
 
@@ -72,6 +75,29 @@ All outputs will be saved under the `data/` folder.
 
 These outputs feed directly into the Power BI dashboard (Part 3) for interactive monitoring and account-level insights.
 
+## Demo Dataset
+
+**🔗 [Part 2 Dataset](https://umanitoba-my.sharepoint.com/:f:/g/personal/tranndt_myumanitoba_ca/El2HkuodHShOmfMw5a5JZ8cBqGlAQ0BOJlLP58izg_7lqQ?e=v7z3J3)**
+
+**Dataset Overview:**
+
+`raw/`:
+
+Raw dataset generated includes:
+
+* 3,000 customers over 72 billing cycles (6 years)
+* \~14,000 accounts created
+* \~580,000 records for usage, billing, and payments
+* 500+ accounts closed due to delinquency
+
+`preprocessed/`
+
+* Aggregated, Training features and labels per snapshot, used for training
+
+`ml_output/`
+
+* Model-output snapshot predictions and their explanations on all snapshots
+
 ## 🧠 ML Summary
 
 * **Model**: Random Forest classifier
@@ -82,6 +108,3 @@ These outputs feed directly into the Power BI dashboard (Part 3) for interactive
   * C = High Risk (Bad Debt)
 * **Evaluation**: Classification report, precision/recall, SHAP feature importance
 
-## 📘 Read More
-
-📄 `Part 2 - Machine Learning.pdf` — includes full breakdown of the ML approach, case studies, and detailed explanation of feature engineering and label design.

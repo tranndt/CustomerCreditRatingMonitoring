@@ -14,6 +14,27 @@ Key features include:
 * Automatically **escalating account status** (Delinquent → Suspended → Closed)
 * Producing a **comprehensive**, **multi-table dataset** for **downstream ML and dashboard use**
 
+## 📘 Report
+
+* [**Report #1 - Engineering A Utility Service Dataset.pdf**](https://github.com/tranndt/CustomerCreditRatingMonitoring/blob/894de102cc59f4eb87245e9f58f16fb053710b2c/01-data-engineering/Report%20%231%20-%20Engineering%20A%20Utility%20Service%20Dataset.pdf)
+
+Detailed report on the simulation logic, design considerations, and behavior examples
+
+## 📊 Demo Dataset
+
+The pre-generated version of the dataset is available here:
+
+**🔗 [Demo Dataset](https://umanitoba-my.sharepoint.com/:f:/g/personal/tranndt_myumanitoba_ca/EjdT412QMgBOsgIzCtkaAxwBbJ3U2IsTR-0lE6Bl3ZiTGw?e=gW8kWg)**
+
+The demo dataset simulate the activity of a customer base of 3,000 customers over 72 billing cycles (6 years). 
+By the end of the simulation, we generated: 
+
+- **14,000 accounts** created 
+- **580,000 records**each for usage, billings, and payments 
+- **Full balance snapshot history** tracking financial state for every account, every month 
+- **500+ accounts ultimately closed** and written off due to unresolved delinquency 
+
+
 ## 📂 Key Files
 
 | File/Folder                     | Description                                                                         |
@@ -48,23 +69,5 @@ The following CSV files will be generated:
 
 These outputs provide the raw foundation for machine learning modeling and Power BI dashboard reporting.
 
-## 📊 Demo Dataset
-
-The pre-generated version of the dataset is available here:
-
-**🔗 [Demo Dataset](https://umanitoba-my.sharepoint.com/:f:/g/personal/tranndt_myumanitoba_ca/EjdT412QMgBOsgIzCtkaAxwBbJ3U2IsTR-0lE6Bl3ZiTGw?e=gW8kWg)**
-
-The demo dataset simulate the activity of a customer base of 3,000 customers over 72 billing cycles (6 years). 
-By the end of the simulation, we generated: 
-
-- **14,000 accounts** created 
-- **580,000 records**each for usage, billings, and payments 
-- **Full balance snapshot history** tracking financial state for every account, every month 
-- **500+ accounts ultimately closed** and written off due to unresolved delinquency 
 
 
-## 📘 Read More
-
-For more background on the simulation logic, design considerations, and behavior examples:
-
-📄 `Part 1 - Data Engineering.pdf`

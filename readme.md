@@ -11,10 +11,10 @@ This repository contains a complete, end-to-end solution for simulating, analyzi
 
 Read the key reports here:
 
-* [**Full Report - Customer Credit Rating Classification & Monitoring.pdf**]()
-* [**Report #1 - Engineering A Utility Service Dataset.pdf**]()
-* [**Report #2 - Creating A Customer Credit Rating Classification System.pdf**]()
-* [**Report #3 - Monitoring Customer Credit Risk in Power BI.pdf**]()
+* [**Full Report - Customer Credit Rating Classification & Monitoring.pdf**](https://github.com/tranndt/CustomerCreditRatingMonitoring/blob/894de102cc59f4eb87245e9f58f16fb053710b2c/Full%20Report%20-%20Customer%20Credit%20Rating%20Classification%20%26%20Monitoring.pdf)
+* [**Report #1 - Engineering A Utility Service Dataset.pdf**](https://github.com/tranndt/CustomerCreditRatingMonitoring/blob/894de102cc59f4eb87245e9f58f16fb053710b2c/01-data-engineering/Report%20%231%20-%20Engineering%20A%20Utility%20Service%20Dataset.pdf)
+* [**Report #2 - Creating A Customer Credit Rating Classification System.pdf**](https://github.com/tranndt/CustomerCreditRatingMonitoring/blob/894de102cc59f4eb87245e9f58f16fb053710b2c/02-modelling/Report%20%232%20-%20Creating%20A%20Customer%20Credit%20Rating%20Classification%20System.pdf)
+* [**Report #3 - Monitoring Customer Credit Risk in Power BI.pdf**](https://github.com/tranndt/CustomerCreditRatingMonitoring/blob/894de102cc59f4eb87245e9f58f16fb053710b2c/03-reporting-dashboard/Report%20%233%20-%20Monitoring%20Customer%20Credit%20Risk%20in%20Power%20BI.pdf)
 
 
 ## 📁 Repository Structure
@@ -35,20 +35,20 @@ The full datasets (CSVs) used in the project can be downloaded here:
 
 Includes:
 
-`01-data-engineering/data`
+`data/01-data-engineering`
 
 * Customer & Account info
 * Usage, Billing & Payment history
 * Balance Snapshots & Bad Debt records
 * Engineered features & prediction outputs
 
-`02-modelling/data`
+`data/02-modelling`
 
 * Raw balance snapshot data
 * ML-ready snapshot features, labels & metadata
 * Snapshot predictions and explanations
 
-`03-reporting-dashboard/data`
+`data/03-reporting-dashboard`
 
 * Raw balance snapshot data 
 * Aggregated snapshot features
