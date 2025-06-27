@@ -1,4 +1,4 @@
-# 🔍 Customer Credit Risk Simulation & Monitoring – Project Overview
+# 🔍 Customer Credit Rating Classification & Monitoring – Project Overview
 
 This repository contains a complete, end-to-end solution for simulating, analyzing, and monitoring **customer delinquency and credit risk** in a utility service billing context. It consists of three core components:
 
@@ -6,7 +6,16 @@ This repository contains a complete, end-to-end solution for simulating, analyzi
 * 🧠 **Machine Learning** – Feature engineering and modeling to classify accounts into risk tiers
 * 📊 **Power BI Dashboard** – Visual reporting to monitor account risk, delinquency progression, and operational KPIs
 
----
+
+## 📝 Reports
+
+Read the key reports here:
+
+* [**Full Report - Customer Credit Rating Classification & Monitoring.pdf**]()
+* [**Report #1 - Engineering A Utility Service Dataset.pdf**]()
+* [**Report #2 - Creating A Customer Credit Rating Classification System.pdf**]()
+* [**Report #3 - Monitoring Customer Credit Risk in Power BI.pdf**]()
+
 
 ## 📁 Repository Structure
 
@@ -45,7 +54,6 @@ Includes:
 * Aggregated snapshot features
 * Snapshot predictions and explanations
 
----
 
 ## 📄 Project Reports
 
@@ -64,11 +72,10 @@ To read a full explanation of each phase of the project, refer to the following 
 
 If you'd like to run the simulation or modeling locally:
 
-1. Create a Python environment (`requirements.txt`)
-2. Navigate to the corresponding folder (`01-data-engineering/` or `02-modelling/`)
+1. Navigate to the corresponding folder (`01-data-engineering/` or `02-modelling/`)
+2. Create a Python environment (`requirements.txt`)
 3. Run notebooks or scripts as outlined in their README files
 
----
 
 ## 📬 Questions or Feedback?
 
