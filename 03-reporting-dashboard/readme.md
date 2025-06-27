@@ -15,7 +15,7 @@ This report enables real-time monitoring and decision support for customer delin
 
 Explore the interactive dashboard here:
 
-🔗 [Power BI Online Demo](link-to-demo)
+🔗 [Power BI Online Demo](https://app.powerbi.com/view?r=eyJrIjoiOGVkYzY5MTAtMTU1Mi00Zjc3LThkNTctOTc1OWFlYjlmNWM2IiwidCI6IjZkMzI1MGEzLTg5NDUtNDNjZS05Nzg0LTlmMjcwZWVjYzQ1MSJ9)
 
 Perfect for demos, interviews, or collaborative presentations.
 
